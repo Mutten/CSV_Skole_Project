@@ -20,6 +20,6 @@ print 'Got connection from', addr
 while True:
     msg = c.recv(1024)
     print (addr), ' >> ', msg
-    msg = 'SERVER >> '
+    msg = 'Traceback OK '
     c.send(msg);
-#    c.close()                # Close the connection
+    #c.close()                # Close the connection    
