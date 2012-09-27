@@ -9,7 +9,8 @@ import pylab
 
 # Come up with x and y
 x = np.arange(0, 5, 0.1)
-y = np.sin(x)
+#y = np.sin(x)
+y = x
 
 # Just print x and y for fun
 print x
