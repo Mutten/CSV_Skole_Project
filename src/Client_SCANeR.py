@@ -23,4 +23,4 @@ while True:                         # While Loop
     msg = s.recv(1024)              # Message Recv  
     print 'Math doing OK', msg      # Print to Screen 
     time.sleep(1)                   # Sleep timer in seconds 
-#s.close
+s.close ("exit")
