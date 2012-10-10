@@ -20,10 +20,7 @@ s.bind((host, port))                # Bind to the port
 s.listen(5)                         # Now wait for client connection.
 c, addr = s.accept()                # Establish connection with client.
 print 'Got connection from', addr   # Print Connetion and address
-#msg = c.recv(1024)
-#print msg.isdigit()
-#if msg.isdigit() :
-#    print "Pink"
+
 y=[]                                # y = a new ararry / list
 x = np.arange(0, 5, 0.1)            # x = numpy in range from 0 to 5 with a jump of 0.1  - Come up with x and y
 while len(y)<len(x) :               # While the lenth of y is less then lenth of x do whatever in the loop
