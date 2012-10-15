@@ -11,7 +11,7 @@ import socket
 #i=random.uniform                            # variable i = Random number or hole number
 def main():                                  #def main(): is for SCANeR to run the script correctly (and multiple times)
     s = socket.socket()                      # Create Socket   
-    host = "10.115.254.55"                   # Host IP   
+    host = socket.gethostname()              #"10.115.254.55"  # Host IP   
     port = 12345                             # Host Port   
  
     print 'CollisionClient is connecting to ', host, port  # Bind to the port
@@ -30,4 +30,5 @@ def main():                                  #def main(): is for SCANeR to run t
 #    time.sleep(1)                           # Sleep timer in seconds 
 #s.close ("exit")
     s.close()
-    return 0                                #end of def main():
+    return 0                                 #end of def main():
+                                
