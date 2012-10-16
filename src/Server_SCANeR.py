@@ -41,8 +41,8 @@ while oor < 5 and coll < 4 :            # While loop for Coll and oor for a <
         print (coll), ' >> ', msg       # Print address and msg from Client
         #c, addr = s.accept()
         
-    elif msg == 'Start' :           # els if msg = Collision go into Statement as above
-        print "NU start vi rigtig"
+    #elif msg == 'Start' :               
+        #print "NU start vi rigtig"
         #coll = coll + 1                 # Count Coll + 1 
         #print (coll), ' >> ', msg       # Print address and msg from Client
         #c, addr = s.accept()
@@ -54,10 +54,10 @@ while oor < 5 and coll < 4 :            # While loop for Coll and oor for a <
     c.close()                           # Close Connection
     print oor , "Udenfor "              # Print oor as "Udenfor" Togeather  
     print coll , "Sammen"               # Print coll as "Sammen" Together 
-    x=x+1
-    xListe.append(x)
-    ycoll.append(coll)
-    yoor.append(oor)
+    x=x+1                               # Count x + 1 (Time in sec)
+    xListe.append(x)                    # Append x (time in sec) to x liste 
+    ycoll.append(coll)                  # Append curent coll to ycoll listen
+    yoor.append(oor)                    # Append curent orr to yoor listen
 
 
 
@@ -67,7 +67,7 @@ while oor < 5 and coll < 4 :            # While loop for Coll and oor for a <
     
 #    y.append(float(msg))            # y append to the list with a float (comma numbers) numbers from msg (Numbers from client) 
 
-plt.plot(xListe,yoor,xListe,ycoll )                                  
+plt.plot(xListe,yoor,xListe,ycoll )  #  # Plotter oor og coll i forhold til tid  the xListe , yoor , ycoll                              
 #plt.plot(xListe, yoor)                      # plot the x and y 
 
 pylab.show() 
