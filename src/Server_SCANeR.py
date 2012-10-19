@@ -14,12 +14,11 @@ coll = 0.0                          # Collision
 xListe = []                         # Empty array for x = Time
 ycoll = []                          # Empty array for y = Collision
 yoor =  []                          # empty array for y = Out of Road
-#q = socket.socket()                # Create a socket object for Quit
+
 s = socket.socket()                 # Create a socket object for Start 
                 
 host = socket.gethostname()         # Get local machine name
 port = 12345 
-#portq = 12346
 print 'Server started!'
 print 'Waiting for clients...'
 
@@ -58,16 +57,9 @@ while oor < 5 and coll < 4 :            # While loop for Coll and oor for a <
     xListe.append(x)                    # Append x (time in sec) to x liste 
     ycoll.append(coll)                  # Append curent coll to ycoll listen
     yoor.append(oor)                    # Append curent orr to yoor listen
-
-
-
- 
-      
-        
-    
+            
 #    y.append(float(msg))            # y append to the list with a float (comma numbers) numbers from msg (Numbers from client) 
 
-plt.plot(xListe,yoor,xListe,ycoll )  #  # Plotter oor og coll i forhold til tid  the xListe , yoor , ycoll                              
-#plt.plot(xListe, yoor)                      # plot the x and y 
+plt.plot(xListe,yoor,xListe,ycoll )  #  # Plotter oor og coll i forhold til tid  the xListe , yoor , ycoll                               
 
 pylab.show() 
